@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>最新资讯 - sieSchool</title>
+	<meta name="keywords" content="sieSchool">
+	<meta name="description" content="sieSchool">
+	<link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../../public/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" media="all">
+</head>
+<body>
+<!-- top 
+================================================================================-->
+<div id="fixedMenu" class="top">
+	<div class="top-bar">
+		<div class="container">
+			<p>SIE<span>国际暑期学校</span>International Summer Sessions</p>
+		</div>
+	</div>
+	<div class="top-box">
+		<div class="container">
+			<div class="logo-box pull-left">
+				<a href="../../index.html">
+					<img src="../../../public/img/logo.png" alt="sieSchool">
+				</a>
+			</div>
+			<div class="nav-box pull-right">
+				<div class="language text-right">
+					<a href='../../user/login.html' id="login" title='登录'>登录</a>
+					 
+					<a href='../../user/register-step01.html' id="register" title='注册'>注册</a>
+					<a href="../../user/user_center.html"class='username' id="user_center" title="个人中心"></a>
+					<a id="logout" class='userout' title="退出登录">退出</a>
+					
+					<a title="中文" style="cursor:pointer"><img src="../../../public/img/language-cn.png"></a>
+					<a title="English" style="cursor:pointer" onclick="window.location.href=window.location.href.replace('/cn','/en')"><img style="height:23px;" src="../../../public/img/language-en.svg"></a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li class="dropdown active">
+						  	<a id="nav-01" class="nav-link btn" href="../../index.html" role="button">首页</a>
+						</li>
+						<li class="dropdown">
+						  	<a id="nav-01" class="nav-link btn" href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">暑校介绍 <i class="fa fa-angle-down"></i></a>
+						  	<ul class="dropdown-menu" aria-labelledby="nav-01">
+													    	<li><a href="../../about-us/about-sie/index.html">关于SIE</a></li>
+													    	<li><a href="../../about-us/about-ecnu/index.html">关于ECNU</a></li>
+													    	<li><a href="../../about-us/about-bjtu/index.html">关于BJTU</a></li>
+													  	</ul>
+						</li>
+						<li class="dropdown">
+						  	<a id="nav-02" class="nav-link btn" href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">暑校课程 <i class="fa fa-angle-down"></i></a>
+						  	<ul class="dropdown-menu" aria-labelledby="nav-03">
+													    	<li><a href="../../courses/course-list/index.html">课程列表</a></li>
+													    	<li><a href="../../courses/current-faculty/index.html">现任教授</a></li>
+													    	<li><a href="../../courses/add-drop/index.html">课程设置</a></li>
+													    	<li><a href="../../courses/academic-calendar/index.html">暑校日程</a></li>
+													    	<li><a href="../../courses/course-format/index.html">研究项目</a></li>
+													    	<li><a href="../../courses/former-faculty/index.html">往届教授</a></li>
+													  	</ul>
+						</li>
+						<li class="dropdown">
+						  	<a id="nav-03" class="nav-link btn" href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">学费详情 <i class="fa fa-angle-down"></i></a>
+						  	<ul class="dropdown-menu" aria-labelledby="nav-02">
+													    	<li><a href="../../application/tuition/index.html">学费价格</a></li>
+													    	<li><a href="../../application/scholarship/index.html">奖学金</a></li>
+													    	<li><a href="../../application/refund/index.html">退款事宜</a></li>
+													    	<li><a href="../../application/paytype/index.html">支付方式</a></li>
+								
+						  	</ul>
+						</li>
+						<li class="dropdown">
+						  	<a id="nav-04" class="nav-link btn" href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">申请指南 <i class="fa fa-angle-down"></i></a>
+						  	<ul class="dropdown-menu" aria-labelledby="nav-04">
+													    	<li><a href="../../academics/how-to-apply/index.html">申请流程</a></li>
+													    	<li><a href="../../academics/credit-transfer/index.html">学分转换</a></li>
+													    	<li><a href="../../academics/cdgdc-verification/index.html">CDGDC认证</a></li>
+													    	<li><a href="../../academics/wes-verification/index.html">WES认证</a></li>
+													    	<li><a href="../../academics/order-transcript/index.html">官方成绩单</a></li>
+													    	<li><a href="../../academics/eligibility/index.html">申请要求</a></li>
+													  	</ul>
+						</li>
+						<li class="dropdown">
+						  	<a id="nav-05" class="nav-link btn" href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">校园生活 <i class="fa fa-angle-down"></i></a>
+						  	<ul class="dropdown-menu" aria-labelledby="nav-06">
+													    	<li><a href="../../campus-life/housing/index.html">校区住宿</a></li>
+													    	<li><a href="../../campus-life/highlights/index.html">精彩瞬间</a></li>
+													  	</ul>
+						</li>
+						<li class="dropdown">
+						  	<a id="nav-06" class="nav-link btn" href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我们 <i class="fa fa-angle-down"></i></a>
+						  	<ul class="dropdown-menu" aria-labelledby="nav-07">
+													    	<li><a href="../../contact-us/contact-us/index.html">联系我们</a></li>
+													    	<li><a href="../../contact-us/faq/index.html">常见问题</a></li>
+													    	<li><a href="../../contact-us/internship/index.html">实习招聘</a></li>
+													  	</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- page-banner 
+================================================================================-->
+<div class="banner page-banner">
+    <div class="page-banner-bg page-banner-bg07">
+    	<div class="container">
+        	<p><b>SIE ALLIANCE OF INTERNATIONAL</b></p>
+        	<p><b>SUMMER SESSIONS</b></p>
+    	</div>
+    </div>
+</div>
+
+<!-- area 
+================================================================================-->
+<div class="area">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-3 area-lf">
+				<div class="list-group menu">
+					<h4 class="list-group-item">首页</h4>
+					<ul>
+						<li class="list-group-item active">
+				  			<a href="index.html">最新资讯 <i class="fa fa-chevron-right"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-9 area-rg">
+				<div class="news-list">
+    				<ul>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/55.html"><h5>欢迎AUIA成为SIE的战略合作伙伴</h5></a>
+								<p>AUIA将协助SIE针对2017年北京和上海的暑校项目共同招生</p>
+								<p class="text-right">
+									<span>2017/02/09</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/55.html"><img class="img-responsive" src="../../../uploadfile/2017/0209/20170209034104875.jpg" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/54.html"><h5>纪念SIE的朋友Paul Magelli</h5></a>
+								<p>Heaven is a little brighter and more organized today.</p>
+								<p class="text-right">
+									<span>2016/12/09</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/54.html"><img class="img-responsive" src="../../../uploadfile/2016/1209/20161209023814489.jpg" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/53.html"><h5>黑色星期五小活动</h5></a>
+								<p>嘘！看就看了，别说出去。</p>
+								<p class="text-right">
+									<span>2016/11/24</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/53.html"><img class="img-responsive" src="../../../uploadfile/2016/1124/20161124055826250.png" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/52.html"><h5>2017年SIE暑校项目报名开始啦</h5></a>
+								<p>经过精心地筹备，2017年，SIE暑校项目正式上线啦！
+丰富的课程，贴心的安排，精彩的活动，这么多的准备就是为了点亮你的夏日时光。</p>
+								<p class="text-right">
+									<span>2016/11/02</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/52.html"><img class="img-responsive" src="../../../uploadfile/2016/1102/20161102085545679.jpg" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/48.html"><h5>华师大暑校 校园卡充值指南</h5></a>
+								<p>虽然是网上充值，但是同学们还是需要去指定机器上进行操作后，钱才会到账哦！</p>
+								<p class="text-right">
+									<span>2016/06/03</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/48.html"><img class="img-responsive" src="../../../uploadfile/2016/0603/20160603050750212.jpg" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/46.html"><h5>“你回家，我买单”，优惠等你来拿！</h5></a>
+								<p>想到刚刚报名暑期课程的同学们，又是机票又是学费又是住宿费，小s真是于心不忍啊。所以就让我们帮同学们分担这张机票吧！</p>
+								<p class="text-right">
+									<span>2016/04/14</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/46.html"><img class="img-responsive" src="../../../uploadfile/2016/0414/20160414045238721.png" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/44.html"><h5>【福利】报名暑校的同学，SIE帮你找室友啦！</h5></a>
+								<p>SIE帮你找室友！回答问卷，我们就能帮你找出相对来说最适合的室友啦！</p>
+								<p class="text-right">
+									<span>2016/03/22</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/44.html"><img class="img-responsive" src="../../../uploadfile/2016/0322/20160322020144963.jpg" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/42.html"><h5>暑校课程也团购，便宜让你占个够！</h5></a>
+								<p>在这个花花草草们都开始蠢蠢欲动的季节里，带上你的小伙伴们，和小s在知识的海洋里浪里个浪吧！</p>
+								<p class="text-right">
+									<span>2016/03/16</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/42.html"><img class="img-responsive" src="../../../uploadfile/2016/0316/20160316101758261.png" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/37.html"><h5>WHY SIE?</h5></a>
+								<p>留学生为什么选择上SIE暑校？</p>
+								<p class="text-right">
+									<span>2016/02/17</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/37.html"><img class="img-responsive" src="../../../uploadfile/2016/0218/20160218101106449.jpg" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/35.html"><h5>【春节特惠】春节期间报名缴费，立减$100!</h5></a>
+								<p>春节马上到，暖心大红包；为了爸妈，请收下这个红包！</p>
+								<p class="text-right">
+									<span>2016/01/26</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/35.html"><img class="img-responsive" src="../../../uploadfile/2016/0126/20160126010735976.jpg" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/31.html"><h5>【感恩节有礼】 庆祝SIE新网站上线！$100学费礼等你拿！</h5></a>
+								<p>感恩节到了，SIE祝福所有校友们节日快乐！</p>
+								<p class="text-right">
+									<span>2015/11/26</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/31.html"><img class="img-responsive" src="../../../uploadfile/2015/1126/20151126031249486.jpg" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/28.html"><h5>2015 CDGDC认证</h5></a>
+								<p>2015年参加过SIE国际暑期学校的同学们，如有CDGDC认证需求，请务必在今年内（2015年12月31日前）完成认证。</p>
+								<p class="text-right">
+									<span>2015/11/02</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/28.html"><img class="img-responsive" src="../../../uploadfile/2015/1102/20151102021341866.jpg" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/3.html"><h5>北京交通大学国际暑校</h5></a>
+								<p>作为亚洲最大的SIE国际暑校联盟的一员，2016年，我们将继续保持课程的一流品质，努力为同学们带来一期更精彩的暑校项目。</p>
+								<p class="text-right">
+									<span>2015/10/16</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/3.html"><img class="img-responsive" src="../../../uploadfile/2015/1125/20151125040205969.png" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/4.html"><h5>2016年SIE国际暑校联盟官网终于上线啦！优惠活动看这里！</h5></a>
+								<p>最炫酷的界面，最翔实的课程列表，最易用的申请和选课系统，最专业的客服支持，让读暑校更加轻松便捷！上暑校，So easy!</p>
+								<p class="text-right">
+									<span>2015/10/16</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/4.html"><img class="img-responsive" src="../../../uploadfile/2015/1102/20151102113342146.jpg" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/5.html"><h5>上海华东师范大学国际暑期学校，迎来了她的第7个年头啦！</h5></a>
+								<p>   </p>
+								<p class="text-right">
+									<span>2015/10/16</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/5.html"><img class="img-responsive" src="../../../uploadfile/2015/1030/20151030050453449.jpg" alt="" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="../../show/6.html"><h5>SIE2015年国际暑校已经圆满结束啦！需要CDGDC认证的同学们看过来！</h5></a>
+								<p> </p>
+								<p class="text-right">
+									<span>2015/10/16</span>
+								</p>
+							</div>
+							<div class="col-xs-4">
+								<a href="../../show/6.html"><img class="img-responsive" src="../../../uploadfile/2015/1030/20151030045828494.jpg" alt="" /></a>
+							</div>
+						</div>
+					</li>
+	
+
+
+
+
+    				</ul>
+    			</div>
+    			<nav class="mt-50 text-center">
+					<ul class="pagination">
+					   					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- footer 
+================================================================================-->
+<div id="footer">
+	<div class="container">
+		<h2>SIE Alliance of International Summer Sessions</h2>
+		<em class="line"></em>
+		<div class="wechat mt-30">
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-3">
+					<div class="row">
+						<div class="col-xs-6">
+							<img src="../../../public/img/wechat-consultant.jpg">
+							<p>微信咨询号</p>
+						</div>
+						<div class="col-xs-6">
+							<img src="../../../public/img/wechat-official.jpg">
+							<p>微信公众号</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="mt-30">
+			<span>(86)400-666-5576</span>
+			<em>/</em>
+			<span>iss@sieschool.org</span>
+		</p>
+		<p class="mt-5">
+			<span>BJTU: 010-53383118</span>
+			<em>/</em>
+			<span>bjtuiss@bjtu.edu.cn</span>
+		</p>
+		<p class="mt-5">
+			<span>ECNU:021-32514240</span>
+			<em>/</em>
+			<span>iss@ied.ecnu.edu.cn</span>
+		</p>
+		<div class="copyright">
+			<p>Copyright &copy; 2009 Sinoway International Education Group Limited &nbsp;&nbsp;&nbsp;&nbsp; 京ICP证000007</p>
+		</div>
+	</div>
+</div>
+	
+<script src="../../../public/js/jquery.min.js"></script>
+<script src="../../../public/js/bootstrap.min.js"></script>
+<script src="../../../public/js/jquery.SuperSlide.js"></script>
+<script src="../../../public/js/bootstrap-datetimepicker.js"></script>
+<script src="../../../public/js/chosen.jquery.min.js"></script>
+<script src="../../../public/js/common.js"></script>
+<script src="../../../js/util.js"></script>
+<script src="../../../js/user-operate.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="SIE国际暑期项目">
+    <meta name="description" content="SIE国际暑期项目">
+    	
+	<title>SIE国际暑期项目</title>
+	<link rel="shortcut icon" href="favicon.ico.html" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap-datetimepicker.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/user.css" media="all" />
+</head>
+<body>
+
+<script src="../common-files/header.js" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- banner -->
+<div class="banner banner-user">
+	<p>学生中心</p>
+</div>
+
+<!-- cooperate-colleges -->
+<div class="user">
+	<div class="container">
+		<div class="user-lf">
+        	<ul>
+				<li><a href="user_center.html">个人中心</a></li>
+        		<li><a href="application.html">申请表</a></li>
+        		<li class="active"><a href="project-registration.html">项目报名</a></li>
+        		<li><a href="tuition-payment.html">学费支付</a></li>
+        		<li><a href="report.html">成绩单/寄送</a></li>
+				<li><a href="order_refund.html">申请退款</a></li>
+        		<li><a href="order-history.html">历史订单</a></li>
+        	</ul>
+        </div>
+		<div class="user-rg">
+			<div class="plate-box w900">
+				<h3><i class="ico ico-project"></i> 项目选择</h3>
+				<div class="area">
+					<div class="report-info form-list form-inline">
+						<div class="form-group">
+							<label>选择项目</label>
+							<div class="dropdown dropdown-select inline-block">
+								<input type="text" class="form-control w300" id="project" data-toggle="dropdown" value="上海 ECNU 5周">
+								<ul class="dropdown-menu" aria-labelledby="project">
+									<!--<li>上海 ECNU 4周</li>-->
+									<!--<li>上海 ECNU 5周</li>-->
+									<!--<li>上海 ECNU 4周+上海 ECNU 5周</li>-->
+									<!--<li>上海 ECNU 4周+上海 ECNU 4周</li>-->
+									<!--<li>北京 ECNU 4周</li>-->
+								</ul>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="dropdown dropdown-select inline-block">
+								<input type="text" class="form-control w300" id="course-num" data-toggle="dropdown" value="选课门数">
+								<ul class="dropdown-menu" aria-labelledby="course-num">
+									<!--<li>1门</li>-->
+									<!--<li>2门</li>-->
+									<!--<li>3门</li>-->
+									<!--<li class="disabled">4门</li>-->
+									<!--<li class="disabled">5门</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="tab-box project-tab">
+						<span class="project-time"></span>
+						<ul class="nav nav-tabs" role="tablist">
+						    <!--<li role="presentation" class="active"><a href="#project01" aria-controls="project01" role="tab" data-toggle="tab">上海</a></li>-->
+						    <!--<li role="presentation"><a href="#project02" aria-controls="project02" role="tab" data-toggle="tab">北京</a></li>-->
+					  	</ul>
+					  	<div class="tab-content">
+						    <!--<div role="tabpanel" class="tab-pane active" id="project01">-->
+								<!--<table class="table table-bordered table-middle text-center">-->
+									<!--<tr>-->
+										<!--<th>课程时间</th>-->
+										<!--<th>课程代码</th>-->
+										<!--<th>课程名称</th>-->
+										<!--<th>选择</th>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td rowspan="3"><label>8：30 &#45;&#45; 10：30</label></td>-->
+										<!--<td><label>FIN21</label></td>-->
+										<!--<td><label>Introduction to Finance</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectshanghai" id="projectSelectshanghai1" value="1" checked />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td><label>MAT 12</label></td>-->
+										<!--<td><label>Calculus II</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectshanghai" id="projectSelectshanghai2" value="2" checked />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td><label>PSY 11</label></td>-->
+										<!--<td><label>Principles of Psychology</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectshanghai" id="projectSelectshanghai3" value="3" />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td rowspan="3"><label>8：30 &#45;&#45; 10：30</label></td>-->
+										<!--<td><label>FIN21</label></td>-->
+										<!--<td><label>Introduction to Finance</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectshanghai" id="projectSelectshanghai4" value="4" checked />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td><label>MAT 12</label></td>-->
+										<!--<td><label>Calculus II</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectshanghai" id="projectSelectshanghai5" value="5" />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td><label>PSY 11</label></td>-->
+										<!--<td><label>Principles of Psychology</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectshanghai" id="projectSelectshanghai6" value="6" />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td rowspan="3"><label>8：30 &#45;&#45; 10：30</label></td>-->
+										<!--<td><label>FIN21</label></td>-->
+										<!--<td><label>Introduction to Finance</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectshanghai" id="projectSelectshanghai7" value="7" />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td><label>MAT 12</label></td>-->
+										<!--<td><label>Calculus II</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectshanghai" id="projectSelectshanghai8" value="8" checked />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td><label>PSY 11</label></td>-->
+										<!--<td><label>Principles of Psychology</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectshanghai" id="projectSelectshanghai9" value="9" />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+								<!--</table>-->
+							<!--</div>-->
+						    <!--<div role="tabpanel" class="tab-pane" id="project02">-->
+								<!--<table class="table table-bordered table-middle text-center">-->
+									<!--<tr>-->
+										<!--<th>课程时间</th>-->
+										<!--<th>课程代码</th>-->
+										<!--<th>课程名称</th>-->
+										<!--<th>选择</th>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td rowspan="3"><label>8：30 &#45;&#45; 10：30</label></td>-->
+										<!--<td><label>FIN21</label></td>-->
+										<!--<td><label>Introduction to Finance</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectBeijing" id="projectSelectBeijing1" value="1" />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td><label>MAT 12</label></td>-->
+										<!--<td><label>Calculus II</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectBeijing" id="projectSelectBeijing2" value="2" checked />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td><label>PSY 11</label></td>-->
+										<!--<td><label>Principles of Psychology</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectBeijing" id="projectSelectBeijing3" value="3" />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td rowspan="3"><label>8：30 &#45;&#45; 10：30</label></td>-->
+										<!--<td><label>FIN21</label></td>-->
+										<!--<td><label>Introduction to Finance</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectBeijing" id="projectSelectBeijing4" value="4" checked />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td><label>MAT 12</label></td>-->
+										<!--<td><label>Calculus II</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectBeijing" id="projectSelectBeijing5" value="5" checked />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td><label>PSY 11</label></td>-->
+										<!--<td><label>Principles of Psychology</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectBeijing" id="projectSelectBeijing6" value="6" />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td rowspan="3"><label>8：30 &#45;&#45; 10：30</label></td>-->
+										<!--<td><label>FIN21</label></td>-->
+										<!--<td><label>Introduction to Finance</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectBeijing" id="projectSelectBeijing7" value="7" checked />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td><label>MAT 12</label></td>-->
+										<!--<td><label>Calculus II</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectBeijing" id="projectSelectBeijing8" value="8" />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+									<!--<tr>-->
+										<!--<td><label>PSY 11</label></td>-->
+										<!--<td><label>Principles of Psychology</label></td>-->
+										<!--<td>-->
+											<!--<div class="radio-box">-->
+												<!--<label>-->
+													<!--<input type="checkbox" name="projectSelectBeijing" id="projectSelectBeijing9" value="9" />-->
+													<!--<i class="fa"></i>-->
+												<!--</label>-->
+											<!--</div>-->
+										<!--</td>-->
+									<!--</tr>-->
+								<!--</table>-->
+							<!--</div>-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="plate-box w900">
+				<h3><i class="ico ico-stay"></i> 住宿选择</h3>
+				<div class="area">
+					<table class="table table-bordered table-middle text-center" id="dormitory">
+						<!--<tr>-->
+							<!--<td><label>北京</label></td>-->
+							<!--<td>-->
+								<!--<div class="radio-box">-->
+									<!--<label class="none">-->
+										<!--<input type="radio" name="stayBeijing" id="stayBeijing1" value="1" />-->
+										<!--<i class="fa"></i>-->
+										<!--<span>校内住宿</span>-->
+									<!--</label>-->
+									<!--<label class="text-grey">校内住宿 （已满）</label>-->
+								<!--</div>-->
+							<!--</td>-->
+							<!--<td>-->
+								<!--<div class="radio-box">-->
+									<!--<label>-->
+										<!--<input type="radio" name="stayBeijing" id="stayBeijing2" value="2" checked />-->
+										<!--<i class="fa"></i>-->
+										<!--<span>校外住宿</span>-->
+									<!--</label>-->
+								<!--</div>-->
+							<!--</td>-->
+						<!--</tr>-->
+						<!--<tr>-->
+							<!--<td><label>上海</label></td>-->
+							<!--<td>-->
+								<!--<div class="radio-box">-->
+									<!--<label>-->
+										<!--<input type="radio" name="stayShanghai" id="stayShanghai1" value="1" checked />-->
+										<!--<i class="fa"></i>-->
+										<!--<span>校内住宿</span>-->
+									<!--</label>-->
+									<!--<label class="text-grey none">校内住宿 （已满）</label>-->
+								<!--</div>-->
+							<!--</td>-->
+							<!--<td>-->
+								<!--<div class="radio-box">-->
+									<!--<label>-->
+										<!--<input type="radio" name="stayShanghai" id="stayShanghai2" value="2" />-->
+										<!--<i class="fa"></i>-->
+										<!--<span>校外住宿</span>-->
+									<!--</label>-->
+								<!--</div>-->
+							<!--</td>-->
+						<!--</tr>-->
+					</table>
+				</div>
+				<div class="mt50 text-center">
+					<input type="submit" class="btn btn-wd-lg btn-danger" value="保存"id="validOrder" />
+					<input type="button" hidden data-toggle="modal" data-target="#modal-order-list" id="create-order"/>
+				</div>
+			</div>
+		</div>
+   	</div>
+</div>
+
+
+<!-- modal-box -->
+<div class="modal modal-xs fade" id="modal-order" tabindex="-1" role="dialog" data-backdrop="static">
+  	<div class="modal-dialog">
+	    <div class="modal-content">
+	      	<div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="SIEe">&times;</span></button>
+		    </div>
+		    <div class="modal-body">
+				<h3 class="text-success">订单成功</h3>
+				<p>请在5日内支付学费，如诺过期，请重新选课。</p>
+		   </div>
+	    </div>
+  	</div>
+</div>
+<div class="modal modal-userBox modal-order-list fade" id="modal-order-list" tabindex="-1" role="dialog" data-backdrop="static">
+  	<div class="modal-dialog">
+	    <div class="modal-content">
+	      	<div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="SIEe">&times;</span></button>
+		        <h4 class="modal-title text-center">订单确认</h4>
+		    </div>
+		    <div class="modal-body">
+		    	<h5>课程</h5>
+				<table class="table table-bordered table-middle text-center mt10" id="course-list">
+					<!--<tr>-->
+						<!--<td><label>PSY 11</label></td>-->
+						<!--<td><label>Principles of Psychology</label></td>-->
+						<!--<td><label>北京</label></td>-->
+					<!--</tr>-->
+					<!--<tr>-->
+						<!--<td><label>PSY 11</label></td>-->
+						<!--<td><label>Principles of Psychology</label></td>-->
+						<!--<td><label>上海</label></td>-->
+					<!--</tr>-->
+				</table>
+		    	<h5>住宿</h5>
+				<table class="table table-bordered table-middle text-center mt10" id="dormitory-list">
+					<!--<tr>-->
+						<!--<td><label>北京校内住宿</label></td>-->
+					<!--</tr>-->
+				</table>
+				<p class="text-right"><b></b></p>
+				<div class="text-right">
+					<input type="submit" class="btn btn-wd-sm btn-danger" value="确认" data-dismiss="modal" id="firm-order" />
+					<input type="button" hidden data-dismiss="modal" data-toggle="modal" data-target="#modal-order" id="success-order-message"/>
+				</div>
+		   </div>
+	    </div>
+  	</div>
+</div>
+
+<script src="../common-files/footer.js" type="text/javascript" charset="utf-8"></script>
+
+
+<script src="../../js/project-registration.js" type="text/javascript" charset="utf-8"></script>
+
+
+</body>
+</html>

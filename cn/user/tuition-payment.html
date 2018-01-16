@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="SIE国际暑期项目">
+    <meta name="description" content="SIE国际暑期项目">
+    	
+	<title>SIE国际暑期项目</title>
+	<link rel="shortcut icon" href="favicon.ico.html" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap-datetimepicker.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/user.css" media="all" />
+</head>
+<body>
+
+<script src="../common-files/header.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- banner -->
+<div class="banner banner-user">
+	<p>学生中心</p>
+</div>
+
+<!-- cooperate-colleges -->
+<div class="user">
+	<div class="container">
+		<div class="user-lf">
+        	<ul>
+				<li><a href="user_center.html">个人中心</a></li>
+        		<li><a href="application.html">申请表</a></li>
+        		<li><a href="project-registration.html">项目报名</a></li>
+        		<li class="active"><a href="tuition-payment.html">学费支付</a></li>
+        		<li><a href="report.html">成绩单/寄送</a></li>
+				<li><a href="order_refund.html">申请退款</a></li>
+        		<li><a href="order-history.html">历史订单</a></li>
+        	</ul>
+        </div>
+		<div class="user-rg">
+			<div class="plate-box w900">
+				<input type="hidden" id="selectPayWay"  data-toggle="modal" data-target="#modal-pay">
+				<h3><i class="fa fa-credit-card"></i> 选择支付方式</h3>
+				<div class="area">
+					<table class="table table-bordered table-middle text-center" id="orderTable">
+						<tr>
+							<th>订单编号</th>
+							<th>状态</th>
+							<th>支付方式</th>
+							<th>项目</th>
+							<th>课程数目</th>
+							<th>住宿</th>
+							<th>总价</th>
+						<!--</tr>-->
+						<!--<tr>-->
+							<!--<td><label>20170204104194669</label></td>-->
+							<!--<td><label> </label></td>-->
+							<!--<td><label>ECNU</label></td>-->
+							<!--<td><label>2</label></td>-->
+							<!--<td><label>无</label></td>-->
+							<!--<td><label>$45,000 / ￥26,565</label></td>-->
+						<!--</tr>-->
+						<!--<tr>-->
+							<!--<td><label>20170204104194669</label></td>-->
+							<!--<td><label> </label></td>-->
+							<!--<td><label>ECNU</label></td>-->
+							<!--<td><label>2</label></td>-->
+							<!--<td><label>无</label></td>-->
+							<!--<td><label>$45,000 / ￥26,565</label></td>-->
+						<!--</tr>-->
+					</table>
+				</div>
+				<!--<div class="mt50 text-center">-->
+					<!--<input type="submit" class="btn btn-wd-lg btn-danger" value="未付款" data-toggle="modal" data-target="#modal-pay" />-->
+					<!--<input type="submit" class="btn btn-wd-lg btn-primary" value="已付款" data-toggle="modal" data-target="#modal-pay" />-->
+				<!--</div>-->
+			</div>
+        </div>
+   	</div>
+</div>
+
+<script src="../common-files/footer.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/tuition-payment.js" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- modal-box -->
+<div class="modal modal-pay fade" id="modal-pay" tabindex="-1" role="dialog" data-backdrop="static">
+  	<div class="modal-dialog">
+	    <div class="modal-content">
+	      	<div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">订单支付</h4>
+		    </div>
+		    <div class="modal-body">
+		    	<div class="form-list form-list-inline">
+		    		<div class="form-group">
+						<label>支付途径</label>
+						<div class="dropdown dropdown-select">
+							<input type="text" class="form-control" id="refundWay" data-toggle="dropdown" value="银行转账">
+							<ul class="dropdown-menu" aria-labelledby="refundWay">
+								<li aria-id="refundWayBank">银行转账</li>
+								<li aria-id="refundWayAlipay">支付宝</li>
+								<li aria-id="refundWayWechat">微信</li>
+								<li aria-id="refundWayEMT">加币EMT</li>
+								<li aria-id="refundWayCash">现金付款</li>
+							</ul>
+						</div>
+					</div>
+					<div class="refundWay-box">
+						<div id="refundWayBank">
+							<h5>招商银行（仅接受人民币）</h5>
+							<table class="table table-paytxt mt10">
+								<tr>
+									<td width="110">收款人姓名：</td>
+									<td><label>通世华威国际教育咨询（北京）有限公司</label></td>
+								</tr>
+								<tr>
+									<td>收款银行名称：</td>
+									<td><label>交通银行北京西坝河支行</label></td>
+								</tr>
+								<tr>
+									<td>账号：</td>
+									<td><label>1100 6211 3018 8000 06310</label></td>
+								</tr>
+							</table>
+							<h5>汇丰银行（仅接受美元）</h5>
+							<table class="table table-paytxt mt10">
+								<tr>
+									<td>Beneficiary Bank:</td>
+									<td><label>HSBC, HONG KONG</label></td>
+								</tr>
+								<tr>
+									<td>Bank Address:</td>
+									<td><label>1 Queen’s Road Cantal, Hong Kong</label></td>
+								</tr>
+								<tr>
+									<td>SWIFT Code:</td>
+									<td><label>HSBCHKHHHKH</label></td>
+								</tr>
+								<tr>
+									<td>Beneficary Company Name:</td>
+									<td><label>Sinoway International Education Group Limited</label></td>
+								</tr>
+								<tr>
+									<td>Beneficary Account Number:</td>
+									<td><label>801-006123-838</label></td>
+								</tr>
+								<tr>
+									<td>Company Address:</td>
+									<td><label>Unit 2508A, 25/F Bank of America Tower, Central, Hong Kong</label></td>
+								</tr>
+							</table>
+							<p class="text-pink">请通知汇款银行在付款命名中的“银行对银行信息”一栏，阐明储蓄货币为美元。</p>
+						</div>
+						<div id="refundWayWechat" class="none">
+							<div class="form-group">
+								<p class="text-pink">注：微信支付将包含0.6%的手续费</p>
+							</div>
+							<div><img class="img-responsive auto" src="../../public/img/wechat-consult.png" style="width:40%"/></div>
+						</div>
+						<div id="refundWayAlipay" class="none">
+							<div class="form-group">
+								<label>支付宝账号</label>
+								<input type="text" class="form-control" placeholder="" value="iss@sieschool.org" readonly>
+								<p class="text-pink mt20">注： 支付途径二，扫码支付将包含0.6%的手续费</p>
+							</div>
+							<div><img class="img-responsive auto" src="../../public/img/wechat-consult.png" /></div>
+						</div>
+						<div id="refundWayEMT" class="none">
+							<div class="form-group">
+								<label>EMT账号</label>
+								<input type="text" class="form-control" placeholder="" value="CADpay@sieschool.org" readonly>
+							</div>
+							<p class="text-pink">请将Security Question设置成为你的订单号，Security Answer设置为siecadpay.</p>
+							<p class="text-pink">支付完成后，我们会在两个工作日内完成订单状态的审核。</p>
+							<p class="text-pink">*email transfer每日每笔最高3,000加元，如果你的订单超过3,000加元，需要分两次emailtransfer.</p>
+						</div>
+						<div id="refundWayCash" class="none">
+							<p class="text-pink">SIE 国际暑校受现场现金付款，暂不支持刷卡。付款前请在网上申请系统中确定自己所需支付的项目，并准备好现金。</p>
+							<table class="table table-paytxt mt10">
+								<tr>
+									<td width="220">北京交通大学国际暑校收费地址：</td>
+									<td><label>北京市海淀区上园村3号北京交通大学</label></td>
+								</tr>
+								<tr>
+									<td>华东师范大学国际暑校收费地址：</td>
+									<td><label>上海市普陀区中山北路3663号华东师大物理楼269室</label></td>
+								</tr>
+								<tr>
+									<td>办公时间：</td>
+									<td><label>9:30-11:30,13:30-16:00,周一至周五（除周二，华师大财务休息)周末及国定节假日休息。</label></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="text-right mt30">
+						<input type="submit" class="btn btn-wd-sm btn-primary" value="确认" id="canclBtn"/>
+					</div>
+		   		</div>
+		   	</div>
+	    </div>
+  	</div>
+</div>
+	
+
+
+</body>
+</html>

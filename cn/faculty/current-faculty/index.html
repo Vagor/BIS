@@ -1,0 +1,925 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>现任教授 - sieSchool</title>
+	<meta name="keywords" content="sieSchool">
+	<meta name="description" content="sieSchool">
+	<link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../../public/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" media="all">
+   
+	<link rel="stylesheet" type="text/css" href="../../css/style.css.html" media="all">
+</head>
+<body>
+<!-- top 
+================================================================================-->
+<div class="top top-absolute" id="fixedMenu" otop="0">
+	<div class="container">
+		<div class="top-box">
+			<div class="logo-box pull-left">
+				<a target="_blank" href="../../../index.html">
+					<img alt="sieSchool" src="../../../public/img/logo.svg">
+					<p>SIE ALLIANCE</p>
+				</a>
+			</div>
+			<div class="nav-box pull-right">
+				<div class="language text-right">
+					<a target="_blank" title="个人中心" id="user_center"></a>
+					<a title="退出登录"  id="logout">退出</a>
+					<a title="English" style="cursor:pointer" onclick="window.location.href=window.location.href.replace('/cn','/en')" ><img src="../../../public/img/language-en.svg"></a>
+					<a title="中文" style="cursor:pointer"><img src="../../../public/img/language-cn.svg"></a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li class="dropdown">
+						  	<a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" href="javascript:;" class="nav-link btn btn-ghost" id="nav-01">关于我们</a>
+						  	<ul aria-labelledby="nav-01" class="dropdown-menu">
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/about-us/about-sie/">关于SIE</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/about-us/about-ecnu/">关于ECNU</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/about-us/about-bjtu/">关于BJTU</a></li>
+													  	</ul>
+						</li>
+						<li class="dropdown">
+						  	<a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" href="javascript:;" class="nav-link btn btn-ghost" id="nav-02">师资力量</a>
+						  	<ul aria-labelledby="nav-02" class="dropdown-menu">
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/faculty/current-faculty/">现任教授</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/faculty/former-faculty/">往届教授</a></li>
+													  	</ul>
+						</li>
+						<li class="dropdown">
+						  	<a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" href="javascript:;" class="nav-link btn btn-ghost" id="nav-03">暑校课程</a>
+						  	<ul aria-labelledby="nav-03" class="dropdown-menu">
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/courses/course-list/">课程列表</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/courses/course-format/">授课形式</a></li>
+													  	</ul>
+						</li>
+						<li class="dropdown">
+						  	<a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" href="javascript:;" class="nav-link btn btn-ghost" id="nav-04">申请中心</a>
+						  	<ul aria-labelledby="nav-04" class="dropdown-menu">
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/application/how-to-apply/">如何申请</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/application/eligibility/">申请要求</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/application/tuition/">学费详情</a></li>
+													  	</ul>
+						</li>
+						<li class="dropdown">
+						  	<a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" href="javascript:;" class="nav-link btn btn-ghost" id="nav-05">学术政策</a>
+						  	<ul aria-labelledby="nav-05" class="dropdown-menu">
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/academics/academic-standards/">学术准则</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/academics/academic-calendar/">暑校日程</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/academics/add-drop/">课程更改</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/academics/order-transcript/">官方成绩单</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/academics/credit-transfer/">学分转换</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/academics/cdgdc-verification/">CDGDC认证</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/academics/wes-verification/">WES认证</a></li>
+													  	</ul>
+						</li>
+						<li class="dropdown">
+						  	<a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" href="javascript:;" class="nav-link btn btn-ghost" id="nav-06">校园生活</a>
+						  	<ul aria-labelledby="nav-06" class="dropdown-menu">
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/campus-life/housing/">暑校住宿</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/campus-life/highlights/">精彩瞬间</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/campus-life/business-program/">商业领袖</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/campus-life/student-union/">学生联盟</a></li>
+													  	</ul>
+						</li>
+						<li class="dropdown">
+						  	<a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" href="javascript:;" class="nav-link btn btn-ghost" id="nav-07">联系我们</a>
+						  	<ul aria-labelledby="nav-07" class="dropdown-menu">
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/contact-us/contact-us/">联系我们</a></li>
+													    	<li><a target="_blank" href="http://sies.55dm.cn/cn/contact-us/faq/">常见问题</a></li>
+													  	</ul>
+						</li>
+						<li>
+							<a href="../../user/login.php.html" class="btn btn-ghost" id="login">登录</a>
+						</li>
+						<li>
+							<a href="../../user/apply.php.html" class="btn btn-danger">申请</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- page-banner 
+================================================================================-->
+<div class="banner page-banner">
+    <div class="page-banner-bg page-banner-bg02">
+    	<div class="container">
+        	<p><b>SIE ALLIANCE OF INTERNATIONAL</b></p>
+        	<p><b>SUMMER SESSIONS</b></p>
+    	</div>
+    </div>
+    <div class="anchor bread-bg">
+	    <div class="container">
+	    	<div class="row">
+	    		<div class="col-xs-9">
+		            <ol class="breadcrumb">
+					  	<li><a href="../../../index.html">首页</a></li>
+					  	<li class="active">师资力量</li>
+					  	
+						<li class="active">现任教授</li>
+					</ol>
+	    		</div>
+	    		<div class="col-xs-3">
+	    			<a class="anchor-link" href="https://www.facebook.com/SIE-International-Summer-School-151383091583687/" title="Facebook"><i class="fa fa-facebook"></i></a>
+	    			<a class="anchor-link" href="http://wpa.qq.com/msgrd?v=3&uin=3294588405&site=qq&menu=yes" title="QQ"><i class="fa fa-qq"></i></a>
+	    			<a class="anchor-link" href="http://weibo.com/sieiss" title="新浪微博"><i class="fa fa-weibo"></i></a>
+	    			<a class="anchor-link" href="javascript:;" title="微信"><i class="fa fa-wechat"></i>
+						<span class="we-chat"><span class="arrow"></span><img src="../../../public/img/official-wechat.jpg" alt="扫一扫" /></span>
+					</a>
+	    		</div>
+	    	</div>
+	    </div>
+    </div>
+</div>
+
+<!-- area 
+================================================================================-->
+<div class="area">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-3 area-lf">
+				<div class="list-group menu">
+					<h4 class="list-group-item">师资力量</h4>
+								  	<a href="http://sies.55dm.cn/cn/faculty/current-faculty/" class="list-group-item active">现任教授 <i class="fa fa-long-arrow-right"></i></a>
+								  	<a href="http://sies.55dm.cn/cn/faculty/former-faculty/" class="list-group-item ">往届教授 <i class="fa fa-long-arrow-right"></i></a>
+								</div>
+				<div class="mt-30">
+
+				<div class="director clearfix">
+<div class="dire-pic pull-left">
+<div class="arrow">&nbsp;</div>
+<p>学术主任<em>ECNU/4</em></p>
+<img alt="" src="../../../uploadfile/2015/1103/20151103111404702.jpg" style="width: 100px; height: 120px;" /></div>
+<div class="dire-name pull-left">
+<h2>Shannon Dea</h2>
+<p>Ph.D.,&nbsp;<br />
+University&nbsp;of&nbsp;Western<br />
+Ontario</p>
+<p><br />
+University&nbsp;of&nbsp;Waterloo</p>
+</div>
+</div>
+<div class="director clearfix">
+<div class="dire-pic pull-left">
+<div class="arrow">&nbsp;</div>
+<p>学术主任<em>ECNU/5</em></p>
+<img alt="" src="../../../uploadfile/2015/1103/20151103111421100.jpg" style="width: 100px; height: 120px;" /></div>
+<div class="dire-name pull-left">
+<h2>Melissa A Butler</h2>
+<p>Ph.D.,&nbsp;<br />
+Johns&nbsp;Hopkins&nbsp;<br />
+University</p>
+<p><br />
+Wabash&nbsp;College</p>
+</div>
+</div>
+<div>
+<div>&nbsp;</div>
+<div>
+<div class="director clearfix">
+<div class="dire-pic pull-left">
+<p>学术主任<em>BJTU/4</em></p>
+<img alt="" src="../../../uploadfile/2015/1203/20151203042440294.jpg" style="width: 100px; height: 120px;" /></div>
+<div class="dire-name pull-left">
+<h2>Colin McLarty</h2>
+<p>Ph.D.,&nbsp;<br />
+Case Western&nbsp;<br />
+Reserve University</p>
+<p><br />
+Case Western&nbsp;<br />
+Reserve University</p>
+</div>
+</div>
+</div>
+</div>
+<br />
+				</div>
+				<div class="mt-30"><img src="../../../public/img/area-lf-pic01.jpg" alt="" /></div>
+			</div>
+			
+			<div class="col-xs-9 area-rg">
+				<h3>现任教授 <small>(*即时更新中)</small></h3>
+				<p>我们的现任教授都有着丰富的教学经验，一定会给你的这个暑假带来不一样的经历。</p>
+				<div class="mt-50">
+				  	<ul class="nav nav-tabs nav-justified" role="tablist">
+					   
+					    <li role="presentation" class="active"><a href="index.html#current-faculty-01" aria-controls="current-faculty-01" role="tab" data-toggle="tab">ECNU-4</a></li>
+					    <li role="presentation"><a href="index.html#current-faculty-02" aria-controls="current-faculty-02" role="tab" data-toggle="tab">ECNU-5</a></li>
+						<li role="presentation"><a href="index.html#current-faculty-03" aria-controls="current-faculty-03" role="tab" data-toggle="tab">BJTU-4</a></li>
+
+
+				  	</ul>
+				  	<div class="tab-content">
+					    
+					    <div role="tabpanel" class="tab-pane fade in active" id="current-faculty-01">
+					    	<div class="row">
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1203/20151203044011315.jpg" width="120" height="160" alt="" style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="https://www.hanover.edu/academics/programs/sociology" target="_blank">James A. Bany</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., University of California, Irvine</p></li>
+					    					<li><i class="fa fa-university"></i><p>Hanover College</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>SOC 11: Introduction to Sociology;</p>
+					    										    						<p>SOC 23: Race and Ethnic Relations </p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1126/20151126041723412.jpg" width="120" height="160" alt="" style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://polisci.ufl.edu/m-leann-brown/" target="_blank">Myra Leann Brown</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., University of South Carolina</p></li>
+					    					<li><i class="fa fa-university"></i><p>University of  Florida	</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>PSC 12: Introduction to International Relations;</p>
+					    										    						<p>PSC 13: Introduction to Comparative Politics</p>
+					    										    						<p></p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1126/20151126041654426.jpg" width="120" height="160" alt="" style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="https://unisa-za.academia.edu/BarryMorton" target="_blank">Barry Morton</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., Indiana University</p></li>
+					    					<li><i class="fa fa-university"></i><p>Ivy Tech Community College</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>HIS 11: Introduction to World History;</p>
+					    										    						<p>HIS 17: American History since 1865</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+								</div>
+				<div class="row" >
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1126/20151126041633835.jpg" width="120" height="160" alt="" style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://people.virginia.edu/~psb7p/" target="_blank">Paul S. Bourdon</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., University of North Carolina at Chapel Hill</p></li>
+					    					<li><i class="fa fa-university"></i><p>University of Virginia</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>MAT 11: Calculus I;</p>
+					    										    						<p>MAT 24: ODEs</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1126/20151126041424481.jpg" width="120" height="160" alt="" style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://business.wfu.edu/directory/doug-beets/" target="_blank">Stephen Douglas Beets</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., Virginia Polytechnic Institute & State University (VPI&SU)</p></li>
+					    					<li><i class="fa fa-university"></i><p>Wake Forest University</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>ACC 11: Financial Accounting;</p>
+					    										    						<p>ACC 12: Managerial Accounting</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102054802262.jpg" width="120" height="160" alt="" style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.uwo.ca/cgi-bin/dsgw/people.pl?mode=details&info=uid=mstephe9,ou=People,dc=uwo,dc=ca" target="_blank">Mark David Stephenson</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., Queen's University</p></li>
+					    					<li><i class="fa fa-university"></i><p>University of Western Ontario</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>ENG 11：College Composition; </p>
+					    										    						<p>EN 12 COM 11: Public Speaking</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+								</div>
+				<div class="row" >
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102054409358.jpg" width="120" height="160" alt="" style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.rit.edu/science/people?combine=Bernard&field_role_tid=All&field_administrative_duties_tid=All&field_initials_short_name_value_1=All&=Search" target="_blank">Bernard Brooks</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., the University of Guelph</p></li>
+					    					<li><i class="fa fa-university"></i><p>Rochester Institute of Technology</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>MAT 22：Introduction to Statistics;</p>
+					    										    						<p>MAT 21：Linear Algebra</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102053413389.jpg" width="120" height="160" alt="" style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.business.uconn.edu/profiles/shantaram-hegde/" target="_blank">Shantaram Hegde</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., University of Massachusetts</p></li>
+					    					<li><i class="fa fa-university"></i><p>University of Connecticut</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>FIN 21：Introduction to Finance;</p>
+					    										    						<p>FIN 23：Introduction to Investment</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102044238879.jpg" width="120" height="160" alt="" style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.wabash.edu/aboutwabash/home.cfm?pages_id=4&staff_id=653" target="_blank">Elizabeth Morton</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>PhD． Emory University</p></li>
+					    					<li><i class="fa fa-university"></i><p>Wabash College</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>ART 11：Introduction to Western Art: </p>
+					    										    						<p>Ancient and Medieval Art; </p>
+					    										    						<p>ART 12：Introduction to Western Art:</p>
+					    										    						<p>Renaissance to the Present</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+								</div>
+				<div class="row" >
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102043418448.jpg" width="120" height="160" alt="" style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://wheatoncollege.edu/faculty/profiles/bianca-cody-murphy/" target="_blank">Bianca Cody Murphy</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>M.P.A., Harvard University</p></li>
+					    					<li><i class="fa fa-university"></i><p>Wheaton College</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>PSY 11：Principles of Psychology；</p>
+					    										    						<p>PSY 14：Social Psychology</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102042818210.jpg.png" width="120" height="160" alt="" style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://illinois.edu/ds/detail?search_type=staff&search=&from_result_list=true&skinId=&userId=pmagelli&sub=" target="_blank">Paul Magelli</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., University of Illinois at Urbana-Champaign</p></li>
+					    					<li><i class="fa fa-university"></i><p>University of Illinois at Urbana-Champaign</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>ECO 11：Microeconomics; </p>
+					    										    						<p>ECO 12：Macroeconomics</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102040704183.jpg" width="120" height="160" alt="" style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="https://uwaterloo.ca/philosophy/people-profiles/shannon-dea" target="_blank">Shannon Dea</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., University of Western Ontario</p></li>
+					    					<li><i class="fa fa-university"></i><p>University of Waterloo</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>PHI 12: Introduction to Philosophy; </p>
+					    										    						<p>PHI 13: Early Modern Philosophy</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div role="tabpanel" class="tab-pane fade" id="current-faculty-02">
+					    	<div class="row">
+			
+
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1126/20151126041934960.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="https://www.ndsu.edu/acct_fin_mis/faculty_staff/michael_j_petersen/" target="_blank">Michael Petersen</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., The University of Iowa</p></li>
+					    					<li><i class="fa fa-university"></i><p>North Dakota State University</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>ACC 11: Financial Accounting;</p>
+					    										    						<p>ACC 12: Managerial Accounting;</p>
+					    										    						<p>BUS 24: Business Law</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1126/20151126041911521.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.macalester.edu/~ding/index.htm" target="_blank">Liang Ding</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., University of North Carolina at Chapel Hill</p></li>
+					    					<li><i class="fa fa-university"></i><p>Macalester College</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>ECO 11: Microeconomics;</p>
+					    										    						<p>ECO 12: Macroeconomics</p>
+					    										    						<p></p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1126/20151126041848866.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.williams.edu/people/?s_directory=Steven+Gerrard" target="_blank">Steven Gerrard</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., The University of Chicago</p></li>
+					    					<li><i class="fa fa-university"></i><p>Williams College</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>PHI 11: Classical Western Philosophy;</p>
+					    										    						<p>PHI 12: Introduction to Philosophy</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+								</div>
+				<div class="row" >
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1126/20151126041809555.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.personal.psu.edu/xuy10/" target="_blank">Xiaoye You</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., Purdue University</p></li>
+					    					<li><i class="fa fa-university"></i><p>The Pennsylvania State University</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>ENG 11: College Composition;</p>
+					    										    						<p>COM11 ENG 12: Public Speaking;</p>
+					    										    						<p>COM 12: Introduction to Communication</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1126/20151126041747477.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.uafmusicdept.com/william-post" target="_blank">William Post</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., Kent State University</p></li>
+					    					<li><i class="fa fa-university"></i><p>University of Alaska-Fairbanks</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>MUS 16: Elementary Music Theory;</p>
+					    										    						<p>MUS 18: Studies in Music</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102051517278.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.wpunj.edu/ccob/departments/marketing-management/faculty/chen-ho-chao/Chen-Ho_Chao.dot" target="_blank">Mike Chao</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., Saint Louis University</p></li>
+					    					<li><i class="fa fa-university"></i><p>William Paterson University of New Jersey</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>MKT 21：Introduction to Marketing; </p>
+					    										    						<p>MKT 22：Introduction to Consumer Behavior; </p>
+					    										    						<p>BUS 21：Introduction to International Business</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+								</div>
+				<div class="row" >
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102050816870.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.wabash.edu/aboutwabash/home.cfm?pages_id=4&staff_id=254" target="_blank">Melissa Butler</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., Johns Hopkins University</p></li>
+					    					<li><i class="fa fa-university"></i><p>Wabash College</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>PSC 11：Introduction to American Government；</p>
+					    										    						<p>PSC 12：Introduction to World Politics</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102045449778.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.cla.purdue.edu/history/directory/?p=Dawn_Marsh" target="_blank">Dawn Gay Marsh</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., University of California</p></li>
+					    					<li><i class="fa fa-university"></i><p>Purdue University</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>HIS 13：20th-21st Century World History；</p>
+					    										    						<p>HIS 17：American History Since 1865</p>
+					    										    						<p></p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102044947495.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.yorku.ca/rsheese2/" target="_blank">Ron Sheese</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph. D., University of Illinois at Urbana-Champaign</p></li>
+					    					<li><i class="fa fa-university"></i><p>York University</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>PSY 11：Principles of Psychology; </p>
+					    										    						<p>PSY 14：Social Psychology</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+								</div>
+				<div class="row" >
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102044527933.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.wabash.edu/aboutwabash/home.cfm?pages_id=4&staff_id=653" target="_blank">Elizabeth Morton</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>PhD， Emory University</p></li>
+					    					<li><i class="fa fa-university"></i><p>Wabash College</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>ART 11：Introduction to Western Art: </p>
+					    										    						<p>Ancient and Medieval Art;</p>
+					    										    						<p>ART 12：Introduction to Western Art:</p>
+					    										    						<p>Renaissance to the Present</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102043850449.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.buffalo.edu/directory/user/slblair?query=Blair&affiliation=facultystaff&qualifier=general&perpage=10&start=0" target="_blank">Sampson Lee Blair</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D.,Penn State University</p></li>
+					    					<li><i class="fa fa-university"></i><p>The State University of New York</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>SOC 11：Introduction to Sociology;</p>
+					    										    						<p>SOC 22：Social Problems</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1102/20151102042304130.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://math.ok.ubc.ca/people/faculty.html" target="_blank">Edward Butz</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., University of Chicago</p></li>
+					    					<li><i class="fa fa-university"></i><p>University of British Columbia</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>MAT 12：Calculus II; </p>
+					    										    						<p>MAT 22：Introduction to Statistics</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+
+					    	</div>
+					    </div>
+
+
+						<div role="tabpanel" class="tab-pane fade" id="current-faculty-03">
+					    	<div class="row">
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2016/0219/20160219055042428.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://people.clas.ufl.edu/shabanov/" target="_blank">Sergei V. Shabanov</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., St. Petersburg State University</p></li>
+					    					<li><i class="fa fa-university"></i><p>University of Florida</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>MAT 11: Calculus I;</p>
+					    										    						<p>MAT 13: Calculus III</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2016/0218/20160218023046226.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="" target="_blank">Brian Schiff</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D.  the University of Chicago</p></li>
+					    					<li><i class="fa fa-university"></i><p>the American University of Paris </p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>PSY 11：Introduction to Psychology;</p>
+					    										    						<p>PSY 21：Developmental Psychology</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2016/0107/20160107024440936.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="" target="_blank">William Frank Bowlin</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D. University of Texas at Austin</p></li>
+					    					<li><i class="fa fa-university"></i><p>North Dakota State University</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>ACC11: Financial Accounting;</p>
+					    										    						<p>ACC12: Managerial Accounting</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+								</div>
+				<div class="row" >
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1230/20151230110359151.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://bill-cook.com/" target="_blank">William Robert Cook</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., Cornell University</p></li>
+					    					<li><i class="fa fa-university"></i><p>SUNY Geneseo</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>HIS 17: U S  History;</p>
+					    										    						<p>HIS 24: The Birth of the Modern World</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1103/20151103104605968.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.bu.edu/religion/people/faculty/bios/michael/" target="_blank">Thomas Michael</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., University of Chicago</p></li>
+					    					<li><i class="fa fa-university"></i><p>Boston University</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>REL 11： Chinese Religion;</p>
+					    										    						<p>HIS 22 REL 28: World History: World Religions in Historical Perspective</p>
+					    										    						<p></p>
+					    										    						<p></p>
+					    										    						<p> </p>
+					    										    						<p></p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1103/20151103103841491.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.wabash.edu/academics/profiles/home.cfm?site_folder=economics&vdeptid=13&facname=mikekp" target="_blank">Peter Mikek</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., Indiana University</p></li>
+					    					<li><i class="fa fa-university"></i><p>Wabash College</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>ECO 11： Microeconomics；</p>
+					    										    						<p>ECO 12： Macroeconomics</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+								</div>
+				<div class="row" >
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1208/20151208101427725.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://www.wabash.edu/academics/profiles/home.cfm?site_folder=modern_languages&vdeptid=26&facname=hardyj" target="_blank">Jane E. Hardy</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., Indiana University</p></li>
+					    					<li><i class="fa fa-university"></i><p>Wabash College</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>COM 11 ENG 12： Public Speaking；</p>
+					    										    						<p>ENG 11： College Composition</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1103/20151103103050364.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://philosophy.case.edu/faculty/colin-mclarty/" target="_blank">Colin McLarty</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., Case Western Reserve University</p></li>
+					    					<li><i class="fa fa-university"></i><p>Case Western Reserve University</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>PHI 11： Introduction to Philosophy；</p>
+					    										    						<p>PHI 12： Introduction to Logic</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2016/0115/20160115114822289.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="https://www.ipfw.edu/departments/cvpa/depts/fine-arts/bios/bios/steven-j.-cody,-ph.d..html" target="_blank">Steven J. Cody</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., University of Maryland, College Park</p></li>
+					    					<li><i class="fa fa-university"></i><p>Indiana University - Purdue University Fort Wayne</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>ART 11： Introduction to Western Art: Ancient and Medieval Art；</p>
+					    										    						<p>ART 12： Introduction to Western Art: Renaissance to the Present</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+								</div>
+				<div class="row" >
+									    		<div class="col-xs-4">
+					    			<div class="faculty-info">
+					    				<img src="../../../uploadfile/2015/1221/20151221105803551.jpg" width="120" height="160" alt=""  style="margin:0 auto;display:block;"/>
+					    				<ul>
+					    					
+											<li><i class="fa fa-user"></i> <h2><a style="text-decoration:none;" href="http://xshu.faculty.ucdavis.edu/" target="_blank">Xiaoling Shu</a></h2></li>
+					    					<li><i class="fa fa-mortar-board"></i><p>Ph.D., University of Minnesota</p></li>
+					    					<li><i class="fa fa-university"></i><p>UC Davis</p></li>
+					    					<li>
+					    						<i class="fa fa-book"></i>
+					    						<p>Course(s) Taught:</p>
+																											    						<p>SOC 11: Introduction to Sociology;</p>
+					    										    						<p>SOC 21: American Society: Markets, Institutions and Culture</p>
+					    										    					</li>
+					    				
+										</ul>
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+
+
+
+
+
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- footer 
+================================================================================-->
+<div id="footer">
+<div class="container">
+<h2>SIE Alliance of International Summer Sessions</h2>
+<h3>联系我们</h3>
+<p class="mt-30"><span><b>BJTU:</b> 010-53383118</span> <em>/</em> <span>iss@sieschool.org</span></p>
+<p class="mt-10"><span><b>ECNU:</b> 021-32514240</span> <em>/</em> <span>iss@ied.ecnu.edu.cn</span></p>
+<p class="mt-30 clearfix">
+
+			<a class="anchor-link" href="https://www.facebook.com/SIE-International-Summer-School-151383091583687/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+			<a class="anchor-link" href="http://wpa.qq.com/msgrd?v=3&uin=3294588405&site=qq&menu=yes" target="_blank" title="QQ"><i class="fa fa-qq"></i></a>
+			<a class="anchor-link" href="http://weibo.com/sieiss" target="_blank" title="新浪微博"><i class="fa fa-weibo"></i></a>
+			<a class="anchor-link" href="javascript:;" title="微信">
+				<i class="fa fa-wechat"></i>
+				<span class="we-chat"><span class="arrow"></span><img src="../../../public/img/official-wechat.jpg" alt="扫一扫"></span>
+			</a>
+</p>
+<hr />
+<div class="copyright">
+<p><a href="../../about-us/about-sie/index.html">关于我们</a> <em>/</em> <a href="../../academics/academic-calendar/index.html">暑校日程</a> <em>/</em> <a href="../../application/how-to-apply/index.html">申请指南</a> <em>/</em> <a href="../../academics/cdgdc-verification/index.html">CDGDC认证</a> <em>/</em> <a href="index.html">现任教授</a> <em>/</em> <a href="../../courses/course-list/index.html">课程列表</a> <em>/</em> <a href="../../campus-life/highlights/index.html">精彩瞬间</a> <em>/</em> <a href="../../contact-us/faq/index.html">常见问题</a></p>
+<p class="mt-20">Copyright &copy; 2015 Sinoway International Education Group Limited &nbsp;&nbsp;&nbsp;&nbsp;京ICP证000007</p>
+</div>
+</div>
+</div>
+<br />	
+	
+<script src="../../../public/js/jquery.min.js"></script>
+<script src="../../../public/js/bootstrap.min.js"></script>
+<script src="../../../state.php.html"></script>
+<div style="display:none;">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257019998'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1257019998' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+</html>

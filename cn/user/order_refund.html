@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="SIE国际暑期项目">
+    <meta name="description" content="SIE国际暑期项目">
+    	
+	<title>SIE国际暑期项目</title>
+	<link rel="shortcut icon" href="favicon.ico.html" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap-datetimepicker.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/user.css" media="all" />
+</head>
+<body>
+<script src="../common-files/header.js" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- banner -->
+<div class="banner banner-user">
+	<p>学生中心</p>
+</div>
+
+<!-- cooperate-colleges -->
+<div class="user">
+	<div class="container">
+		<div class="user-lf">
+        	<ul>
+        		<li><a href="user_center.html">个人中心</a></li>
+        		<li><a href="application.html">申请表</a></li>
+        		<li><a href="project-registration.html">项目报名</a></li>
+        		<li><a href="tuition-payment.html">学费支付</a></li>
+        		<li><a href="report.html">成绩单/寄送</a></li>
+        		<li class="active"><a href="order_refund.html">申请退款</a></li>
+        		<li><a href="order-history.html">历史订单</a></li>
+        	</ul>
+        </div>
+		<div class="user-rg">
+			<div class="plate-box w900">
+				<h3><i class="ico ico-refund"></i> 申请退款<span class="text-danger">*</span></h3>
+				<div class="area">
+					<div class="form-list form-list-inline form-list-lg">
+						<div class="form-group">
+							<label>订单号</label>
+							<!--<span class="form-text">873 6242 8294</span>-->
+							<div class="dropdown dropdown-select">
+								<input type="text" class="form-control" name="code" id="order-code" data-toggle="dropdown">
+								<ul class="dropdown-menu" aria-labelledby="order-code">
+									<li>请选择订单</li>
+									<!--<li></li>-->
+								</ul>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>退款金额</label>
+							<input type="text" class="form-control" placeholder="" name="refundMoney">
+						</div>
+						<div class="form-group">
+							<label>退款原因</label>
+							<textarea class="form-control" rows="5" name="refundReason"></textarea>
+						</div>
+						<div class="form-group">
+							<label>退款途径</label>
+							<div class="dropdown dropdown-select">
+								<input type="text" class="form-control" id="refundWay" name="refundType" data-toggle="dropdown" li-value="1" value="银行转账">
+								<ul class="dropdown-menu" aria-labelledby="refundWay">
+									<li aria-id="refundWayBank" li-value="1">银行转账</li>
+									<li aria-id="refundWayAlipay" li-value="2">支付宝</li>
+									<li aria-id="refundWayWechat" li-value="3">微信</li>
+									<li aria-id="refundWayEMT" li-value="4">加币EMT</li>
+								</ul>
+							</div>
+						</div>
+						<div class="refundWay-box">
+							<div id="refundWayBank">
+								<div class="form-group">
+									<label>开户行</label>
+									<input type="text" class="form-control" placeholder="具体到分行支行名称" name="depositBank">
+								</div>
+								<div class="form-group">
+									<label>收款人</label>
+									<input type="text" class="form-control" placeholder="" id="bank-payee">
+								</div>
+								<div class="form-group">
+									<label>账号</label>
+									<input type="text" class="form-control" placeholder="" name="account">
+								</div>
+							</div>
+							<div id="refundWayWechat" class="none"></div>
+							<div id="refundWayAlipay" class="none">
+								<div class="form-group">
+									<label>收款人</label>
+									<input type="text" class="form-control" placeholder="" id="alipay-payee">
+								</div>
+								<div class="form-group">
+									<label>账号</label>
+									<input type="text" class="form-control" placeholder="" name="alipay">
+								</div>
+							</div>
+							<div id="refundWayEMT" class="none">
+								<div class="form-group">
+									<label>邮箱</label>
+									<input type="text" class="form-control" placeholder="" name="refundEmail">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mt40 text-center">
+						<input type="submit" class="btn btn-wd-lg btn-danger" value="提交申请" id="refund-button" />
+					</div>
+				</div>
+			</div>
+		</div>
+   	</div>
+</div>
+
+
+<!-- modal-box -->
+
+
+<script src="../common-files/footer.js" type="text/javascript" charset="utf-8"></script>
+
+
+<script src="../../js/refund.js" type="text/javascript" charset="utf-8"></script>
+
+
+</body>
+</html>
